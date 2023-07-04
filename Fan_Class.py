@@ -1,5 +1,5 @@
 class FAN:
-    def __init__(self, speed = 1, power = False, radius = 5, color = 'Blue'):
+    def __init__(self, speed = 1, power = 0, radius = 5, color = 'Blue'):
         self.__speed = speed
         self.__power = power
         self.__radius = radius
@@ -12,10 +12,15 @@ class FAN:
         elif self.__speed == 3:
             print("FAST")
     def set_speed(self):
-        self.__speed = int(input("PLease input the number(1,2,3) to set your desired speed: "))
+        self.__speed = int(input("Please input the number(1,2,3) to set your desired speed: "))
     def get_power(self):
-        if self.__power == False:
+        if self.__power == 0:
             print("The Fan is off")
-        elif self.__power == True:
+        elif self.__power == 1:
             print("The Fan is on")
-    
+    def set_power(self):
+        self.__power = int(input("Please input the number(0/1) to set the power state of the Fan: "))
+        if self.__power == 0:
+            print("The Fan is set as: Off")
+        elif self.__power == 1:
+            print("The Fan is set as: On")
