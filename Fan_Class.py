@@ -24,3 +24,8 @@ class FAN:
             print("The Fan is set as: Off")
         elif self.__power == 1:
             print("The Fan is set as: On")
+    def get_radius(self):
+        print("The radius is", self.__radius)
+    def set_radius(self):
+        self.__radius = float(input("Please input the number to set the radius of the Fan: "))
+        print("The Radius is now set to",self.__radius)
