@@ -16,5 +16,6 @@ class FAN:
     def get_power(self):
         if self.__power == False:
             print("The Fan is off")
-        else:
+        elif self.__power == True:
             print("The Fan is on")
+    
