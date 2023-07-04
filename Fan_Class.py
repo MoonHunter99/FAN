@@ -11,3 +11,10 @@ class FAN:
             print("MEDIUM")
         elif self.__speed == 3:
             print("FAST")
+    def set_speed(self):
+        self.__speed = int(input("PLease input the number(1,2,3) to set your desired speed: "))
+    def get_power(self):
+        if self.__power == False:
+            print("The Fan is off")
+        else:
+            print("The Fan is on")
