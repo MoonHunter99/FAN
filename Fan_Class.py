@@ -29,3 +29,8 @@ class FAN:
     def set_radius(self):
         self.__radius = float(input("Please input the number to set the radius of the Fan: "))
         print("The Radius is now set to",self.__radius)
+    def get_color(self):
+        print("The Fan color is", self.__color)
+    def set_color(self):
+        self.__color = str(input("Please input what color you want to set the fan to be: "))
+    
